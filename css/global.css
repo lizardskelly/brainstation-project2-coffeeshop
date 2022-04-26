@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #393939;
+}
+
+.global-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF0ED;
+  padding: 1rem 1rem .75rem 1rem;
+}
+
+.global-nav__brand {
+  display: flex;
+  align-items: flex-end;
+}
+
+.global-nav__brand-logo {
+  min-width: 3.125rem;
+  max-width: 7.5rem;
+  padding-bottom: .5rem;
+}
+
+.global-nav__brand-name {
+  font-size: 3.5rem;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.global-nav__link-container {
+  display: inline-block;
+}
+
+.global-nav__link-list {
+  font-size: 1.3rem;
+  list-style: none;
+  display: inline-block;
+  margin-left: 1.25rem;
+}
+
+.global-nav__link {
+  text-decoration: none;
+  color: #393939;
+}
+
+.global-nav__link--color {
+  color: #5BACC3
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFF0ED;
+}
+
+.footer-section {
+  margin: 3.5rem;
+  display: inline-block;
+}
+
+.footer-section__title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.footer-section__text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-section__text--bold {
+  font-weight: 700;
+}
+
+.footer-section__image {
+  min-width: 3rem;
+  max-width: 7.5rem;
+}
