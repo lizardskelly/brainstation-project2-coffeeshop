@@ -1,0 +1,95 @@
+@use './partials/global' as *;
+
+.menu-header {
+  background-image: url(../assets/coffee-circle.jpg);
+  width: 100%;
+  height: 37.5rem;
+  @include flex-centered;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+  &__container {
+    position: relative;
+    width: 18.75rem;
+    height: 11.5rem;
+  }
+  
+  &__title-offset {
+    background-color: $neutral-color-one;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  &__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    color: $neutral-color-four;
+    width: 100%;
+    height: 100%;
+    @include flex-centered;
+    position: relative;
+    border: 5px solid $font-color-highlight;
+    z-index: 1;
+  }
+}
+
+.menu-nav {
+  width: 100%;
+  height: 3.5rem;
+  background-color: $neutral-color-one;
+  @include flex-centered;
+  
+  &__list {
+    list-style: none;
+    display: inline-block;
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+    border-left: 4px solid $primary-color-one;
+  }
+  
+  &__link {
+    text-decoration: none;
+    color: $font-color-secondary;
+  }
+}
+
+.menu-section {
+  background-color: $primary-color-two;
+  text-align: center;
+  padding-top: 1.5rem;
+  
+  &:nth-child(even) {
+    background-color: $neutral-color-three;
+  }
+  
+  &__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  
+  &__item-container {
+    padding-bottom: 2rem;
+  }
+  
+  &__item-name {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  
+  &__item-description {
+    font-style: italic;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+  }
+  
+  &__price {
+    color: $font-color-highlight;
+  }
+}

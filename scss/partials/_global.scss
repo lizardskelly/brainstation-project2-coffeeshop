@@ -1,0 +1,88 @@
+$primary-color-one: #5BACC3;
+
+$primary-color-two: #FFF0ED;
+
+$neutral-color-one: #393939;
+
+$neutral-color-two: #909090;
+
+$neutral-color-three: #F7F7F7;
+
+$neutral-color-four: #FFF;
+
+$font-color-primary: #393939;
+
+$font-color-secondary: #FFF;
+
+$font-color-highlight: #5BACC3;
+
+$font-color-alternate: #909090;
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: $neutral-color-one;
+}
+
+.global-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color-two;
+  padding: 1rem 1rem .75rem 1rem;
+  
+  &__brand {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  &__brand-logo {
+    min-width: 3.125rem;
+    max-width: 7.5rem;
+    padding-bottom: .5rem;
+  }
+
+  &__brand-name {
+    font-size: 3.5rem;
+    font-weight: 300;
+    display: inline-block;
+    color: $font-color-primary;
+  }
+  
+  &__link-container {
+    display: inline-block;
+  }
+
+  &__link-list {
+    font-size: 1.3rem;
+    list-style: none;
+    display: inline-block;
+    margin-left: 1.25rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $font-color-primary;
+  
+    &--color {
+      color: $font-color-highlight;
+    }
+  }
+}

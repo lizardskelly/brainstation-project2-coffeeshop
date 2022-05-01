@@ -1,0 +1,242 @@
+@use './partials/global' as *;
+
+.store-header {
+  width: 30%;
+
+  &__container {
+    @include flex-space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $primary-color-two;
+    padding: 1.5rem 6rem 3rem 6rem;
+  }
+
+  &__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+  }
+
+  &__text {
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  &__image {
+    margin-right: 3.5rem;
+  }
+}
+
+.landing-button {
+  color: $font-color-secondary;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  z-index: 1;
+  position: relative;
+  background-color: unset;
+  border: 2px solid $neutral-color-one;
+  width: 100%;
+  cursor: pointer;
+  
+  &__link {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__background {
+    background-color: $primary-color-one;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+  }
+
+  &__container {
+    width: fit-content;
+    position: relative;
+    height: fit-content;
+    
+    &--postition {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.products {
+  background-color: $neutral-color-three;
+  padding: 3.5rem 0;
+  
+  &__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.products-card {
+  @include flex-space-between;
+  flex-direction: column;
+  width: 20rem;
+  height: 28rem;
+  background-color: $neutral-color-four;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px 
+  rgba(0, 0, 0, 0.25);
+  margin: 2rem;
+  overflow: hidden;
+  
+  &__container {
+    @include flex-centered;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    margin: 2rem auto;
+    height: 15rem;
+  }
+
+  &__info {
+    @include flex-space-between;
+    align-items: center;
+    height: 33%;
+    background-color: $primary-color-two;
+    padding: 0 1rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  &__amount {
+    font-size: 1rem;
+    color: $font-color-alternate;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $font-color-highlight;
+  }
+}
+
+.story {
+  @include flex-space-between;
+  flex-wrap: wrap;
+  margin: 6rem 6rem;
+  
+  &__info-container {
+    width: 33%;
+  }
+
+  &__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    margin-bottom: 1.75rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__small-image-container {
+    @include flex-space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  &__small-image {
+    width: 3rem
+  }
+
+  &__large-image-container {
+    width: 25rem;
+    height: 25rem;
+    @include flex-centered;
+    position: relative;
+    border: 5px solid $primary-color-one;
+  }
+  
+  &__large-image {
+    padding: 3rem 0;
+    position: relative;
+    
+    &--background {
+      position: absolute;
+      top: 1.25em;
+      left: 1.25rem;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+.discount {
+  max-width: 90%;
+  margin: 12rem auto;
+  
+  &__text {
+    background-color: $neutral-color-one;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: $font-color-secondary;
+    text-align: center;
+    padding: 2.5rem 0;
+    
+    &--bold {
+      font-weight: 700;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $primary-color-two;
+  position: relative;
+  overflow: hidden;
+  
+  &__image {
+    position: absolute;
+    width: 6rem;
+    opacity: .25;
+    
+    &--left {
+      top: 1rem;
+      left: -2rem;
+    }
+    
+    &--right {
+      bottom: 1rem;
+      right: -2rem;
+    }
+  }
+}
+
+.footer-section {
+  margin: 3.5rem;
+  display: inline-block;
+  
+  &__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  
+  &__text {
+    font-size: 1rem;
+    font-weight: 400;
+    
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  
+  &__image {
+    width: 3rem;
+  }
+}
