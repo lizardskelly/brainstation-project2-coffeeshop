@@ -1,5 +1,16 @@
 @use './partials/global' as *;
 
+@keyframes discount-flash {
+  0% {background-color: $neutral-color-one;}
+  50% {background-color: $primary-color-one;}
+  100% {background-color: $neutral-color-one;}
+}
+
+@keyframes can-spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
 .store-header {
   width: 30%;
 
@@ -36,6 +47,10 @@
   border: 2px solid $neutral-color-one;
   width: 100%;
   cursor: pointer;
+
+  &:active {
+    transform: translate(.5rem, .5rem);
+  }
   
   &__link {
     height: 100%;
@@ -163,7 +178,12 @@
   &__large-image {
     padding: 3rem 0;
     position: relative;
+    padding: 3.5rem 7.5rem;
     
+    &:hover {
+      animation: can-spin 2s linear infinite;
+    }
+
     &--background {
       position: absolute;
       top: 1.25em;
@@ -181,6 +201,7 @@
   
   &__text {
     background-color: $neutral-color-one;
+    animation: discount-flash 2.5s linear infinite;
     font-size: 2.8rem;
     font-weight: 400;
     color: $font-color-secondary;
