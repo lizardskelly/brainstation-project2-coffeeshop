@@ -25,27 +25,40 @@
 }
 
 .landing-button {
-  background-color: #5BACC3;
   color: white;
   font-size: 1.3rem;
   font-weight: 400;
   border: none;
-  min-width: 11.25rem;
-  max-width: 80%;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+  z-index: 1;
+  position: relative;
+  background-color: unset;
+  border: 2px solid #393939;
+  width: 100%;
+  cursor: pointer;
 }
 
-.landing-button:hover {
-  background-color: #72d6f1;
-  transition-duration: 0.3s;
+.landing-button__link {
+  height: 100%;
+  width: 100%;
 }
 
-.landing-button:active {
-  box-shadow: inset 5px -5px 10px 0px #FFFFFF;
-  background-color: #393939;
+.landing-button__background {
+  background-color: #5BACC3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
 }
 
 .landing-button__container {
+  width: fit-content;
+  position: relative;
+  height: fit-content;
+}
+
+.landing-button__container--postition {
   display: flex;
   justify-content: center;
 }
@@ -153,19 +166,27 @@
 }
 
 .story__large-image-container {
-  background-image: url(../assets/coldbrewbackground.png);
-  background-position: center;
-  background-size: cover;
   width: 25rem;
+  height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  border: 5px solid #5BACC3;
+}
+
+.story__large-image--background {
+  position: absolute;
+  top: 1.25em;
+  left: 1.25rem;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .story__large-image {
-  min-height: 15rem;
-  max-height: 34rem;
   padding: 3rem 0;
+  position: relative;
 }
 
 .discount {

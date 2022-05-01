@@ -17,7 +17,7 @@
       <div class="global-nav__brand">
         <a href="../index.html"><img src="../assets/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"
             class="global-nav__brand-logo"></a>
-        <h2 class="global-nav__brand-name">nitro</h2>
+            <a href="./index.html" class="global-nav__brand-name"><h2 class="global-nav__brand-name">nitro</h2></a>
       </div>
       <ul class="global-nav__link-container">
         <li class="global-nav__link-list"><a class="global-nav__link" href="./index.html">ABOUT</a></li>
@@ -34,7 +34,10 @@
         <h1 class="store-header__title">Nitro Coffee</h1>
         <p class="store-header__text">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries
           from certain Coffea species.</p>
-        <a href="pages/menu.html"><button class="landing-button">SHOP NOW</button></a>
+        <div class="landing-button__container">
+          <div class="landing-button__background"></div>
+          <a href="pages/menu.html" class="landing-button__link"><button class="landing-button">SHOP NOW</button></a>
+        </div>
       </article>
       <img class="store-header__image" src="/assets/coffeebeans-hero.png" alt="coffee bag">
     </section>
@@ -72,8 +75,11 @@
           </div>
         </article>
       </div>
-      <div class="landing-button__container">
-        <a href="./pages/menu.html"><button class="landing-button">VIEW ALL</button></a>
+      <div class="landing-button__container--postition">
+        <div class="landing-button__container">
+          <div class="landing-button__background"></div>
+          <a href="pages/menu.html" class="landing-button__link"><button class="landing-button">VIEW ALL</button></a>
+        </div>
       </div>
     </section>
     <section class="story">
@@ -86,9 +92,13 @@
           <img class="story__small-image" src="./assets/coffee-beans.svg" alt="coffee beans">
           <img class="story__small-image" src="./assets/coffee-cup.svg" alt="coffee cup">
         </div>
-        <button class="landing-button">LEARN MORE</button>
+        <div class="landing-button__container">
+          <div class="landing-button__background"></div>
+          <a href="pages/menu.html" class="landing-button__link"><button class="landing-button">LEARN MORE</button></a>
+        </div>
       </div>
       <div class="story__large-image-container">
+        <img class="story__large-image--background" src="./assets/coldbrewbackground.png">
         <img class="story__large-image" src="./assets/tiltedcan.png" alt="tilted can">
       </div>
     </section>
@@ -98,6 +108,8 @@
     </section>
   </main>
   <footer class="footer">
+    <img class="footer__image footer__image--left" src="./assets/coffee-beans-logo-and-footer.svg" alt="coffee beans">
+    <img class="footer__image footer__image--right" src="./assets/coffee-beans-logo-and-footer.svg" alt="coffee beans">
     <section class="footer-section">
       <h3 class="footer-section__title">Address</h3>
       <p class="footer-section__text">503 Broadway Penthouse</p>
